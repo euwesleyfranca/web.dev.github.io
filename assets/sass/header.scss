@@ -34,7 +34,8 @@
                  img{
                     transform: rotate(360deg);
                     transition: all .9s ease-in-out;                   
-                 }         
+                 }   
+                
            
         }
        
@@ -98,6 +99,23 @@
                 }
             }
         }  
+    }
+
+}
+@media(min-width: 1920px){
+    .header{
+        > nav {
+            ul {
+                 li {
+                    a{
+                        font-size: 20px;
+                    }
+                 }
+            }
+        }
+        .access{
+            font-size: 20px;
+        }
     }
 
 }

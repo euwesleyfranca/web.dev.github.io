@@ -3,17 +3,17 @@
     position      : relative;
     width         : 100%;
     min-width: 320px;
-    height: 568px;
+    height: 590px;
     align-items   : center;
-    background-color: lightsalmon;
+    background-color: var(--black-2);
 
   .engine-1{
       position: absolute;
       z-index: 1;
-      width: 200px;
-      left: 0;
-      top: 240px;
-      height: 200px;
+      width: 150px;
+      left: 1%;
+      top: 52%;
+      height: 150px;
       background-image: url('../images/background-images/1.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -29,12 +29,11 @@
       position: absolute;
       width: 150px;
       height: 150px;
-      z-index: 0;
-      right: 70px;
-      background-image: url('../images/background-images/2.png');
+      z-index: 1;      
+      top: 25%;
+      background-image: url('../images/background-images/3.png');
       background-repeat: no-repeat;
-      background-size: cover;
-      top: 100px;
+      background-size: cover;     
       border-radius: 50%;
       animation: engine-2 30s infinite linear;
       @keyframes engine-2 {
@@ -51,44 +50,34 @@
     left: 0;
     width: 100%;
     min-width: 320px;
-    height: 538px;  
-    background-image: url('../images/background-engine-image.png');
+    height: 100%;  
+    background-image: url('../images/background-images/background-engine-image-mob.webp');
     background-repeat: no-repeat;
     background-size: cover;
+   
+
   }
   .engine-4{
       display: none;
   }
 
 
-    >div {
+    .session-logo-social {
         position       : absolute;
         z-index        : 3;
         width          : 100%;
-        height         : 363px;
+        height         : 343px;
         align-items    : center;
         justify-content: space-between;
-        padding        : 10px;
-
         .social-icons {
-
+            display: none;
             >svg {
-                padding: 2px;
-            }
-
-            .hr-top {
-                border          : none;
-                height          : 80px;
-                width           : 1px;
-                background-color: var(--gray-1);
-            }
-
-            .hr-bottom {
-                border          : none;
-                height          : 80px;
-                width           : 1px;
-                background-color: var(--gray-1);
-            }
+                padding-bottom: 5px;
+                height: 55px;
+                path{
+                    fill: var(--yellow-2);
+                }
+            }         
 
             flex-direction: column;
         }
@@ -99,61 +88,143 @@
     
 
 }
-
-@media (min-width:768px){
+@media(min-width:568px){
+    #outdoor{       
+       
+        .engine-2{
+            top: 23%;
+        }
+       
+    }
+    }
+@media(min-width:768px){
 #outdoor{
-    height: 620px;
+    height: 590px;
     .engine-1{
-        left: 80px;
-        top:150px ;
+        top: 52%;
     }
     .engine-2{
-        top: 150px;
-        right: 20px;
+        top: 21%;
     }
     .engine-4{
-        position: absolute;
-        z-index: 1;
         display: flex;
-        width: 200px;
-        height: 200px;
-        background-image: url('../images/background-images/3.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: absolute;
+        z-index: 0;
+        background-image: url('../images/background-images/2.png');
+        background-repeat: no-repeat; 
+        width: 150px;
+        height: 145px;
+        right: 6%;
+        top: 23%;       
         border-radius: 50%;
-        top: 120px;
-        left: 300px;
-        animation: engine-3 30s infinite linear;
-        @keyframes engine-3{
+        animation: engine-3 30s linear infinite;
+        @keyframes engine-3 {
             100%{
                 transform: rotate(360deg);
             }
         }
-       
     }
-    .engine-3{
-        height: 620px;
+    .session-logo-social{
+        .social-icons{
+            display: flex;
+        }
     }
 }
 }
-@media (min-width: 1024px){
+@media(min-width:825px){
     #outdoor{
-        height: 770px;
+       
         .engine-1{
-            left: 120px;
-            top: 200px;
+            top: 57%;
         }
         .engine-2{
-            top: 200px;
-            right: 70px;
+            top: 23%;
         }
-        .engine-3{
-            height: 770px;
-        }
-        .engine-4{
-            top: 160px;
-            
+        .engine-4{              
+            right: 8%;
+            top: 27%;             
         }
     }
+    }
+@media(min-width:1024px){
+    #outdoor{
+        height: 790px;          
+            .engine-1{
+                top: 54%;
+            }
+            .engine-2{
+                top: 22%;
+            }
+            .engine-3{
+                background-image: url('../images/new/background-engine-image1440.svg');
+                background-size: contain;
+                background-position: center;
+            }
+            .engine-4{              
+                right: 7%;
+                top: 25%;             
+            }
+            .session-logo-social{
+                padding: 10px;
+                top: 20%;
+            }
+        
+    }
+    }
+@media(min-width:1440px){
+    #outdoor{
+        height: 1111px;
+        .engine-1{
+            top: 55%;
+        }
+        .engine-2{
+            top: 23%;
+        }
+        .engine-3{
+            background-image: url('../images/background-images/background-engine-image1418.webp');
+            background-size: contain;
+            background-position: center;
+        }
+        .engine-4{              
+            right: 8%;
+            top: 27%;             
+        }
+    }
+    }
+@media(min-width:1920px){
+    #outdoor{
+        height: 1111px;
+        .engine-1{
+            top: 48%;
+            left: 18%;
+            background-image: url('../images/background-images/1.png');
+            width: 500px;
+            height: 500px;
+        }
+        .engine-2{
+            top: 18%;
+            background-image: url('../images/background-images/engine-2-900.png');
+            width: 500px;
+            height: 500px;
+        }
+        .engine-3{
+            background-image: url('../images/background-images/background-engine-image1920.webp');
+            background-size: contain;
+            background-position: center;
+        }
+        .engine-4{              
+            right: 22%;
+            top: 20%; 
+            background-image: url('../images/background-images/engine-2-500.svg');
+            width: 500px;
+            height: 500px;            
+        }
 
-}
+        .session-logo-social{
+           top: 30%;
+              
+          }
+    }
+   
+    }
+
