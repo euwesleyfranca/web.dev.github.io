@@ -12,7 +12,9 @@ body, div, article, aside, footer, header, main, nav, section, ul, ol, li, butto
 
 body {
     flex-direction: column;
+    width: 100%;
+    min-width: 320px;
     margin: 0;
     padding: 0;
-    background-color: var(--black-1);
+   
 }

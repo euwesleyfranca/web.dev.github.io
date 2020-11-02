@@ -4,7 +4,8 @@
     width: 100%;
     height: 100px; 
     align-items: center;
-   border-bottom: 1px solid var(--black-2);
+    border-bottom: 1px solid var(--black-2);
+    justify-content: space-between;
     .menu {
         position: relative;
         left: var(--space-20);
@@ -14,31 +15,89 @@
         }
     }
     .logo {
-        position: fixed;
+        position: absolute;
         flex-direction: column;
         width: 136px;
         top: 5px;
         justify-content: center;
         align-items: center;
-        right: calc(50vw - 70px);
+        left: calc(50vw - 70px);
         z-index: 20;
-        color: var(--white);
+        color: var(--white);      
 
         img {
-            transition: all .9s ease-in-out;
+            transition: all .9s ease-in-out;            
         }
 
         &.open {          
             
                  img{
                     transform: rotate(360deg);
-                    transition: all .9s ease-in-out;
-                 }              
+                    transition: all .9s ease-in-out;                   
+                 }         
            
         }
        
     }
     .access {
         display: none;
-    }   
+    } 
+    nav {
+        display: none;
+    }  
+}
+
+@media (min-width: 1025px) {
+    .header {
+        .menu{
+            display: none;
+        }
+       > nav {
+           display: flex;
+            ul {
+                position: relative;
+                left: var(--space-20);
+                margin: 0;
+                padding: 0;
+
+                li {
+                    padding: var(--space-20);
+                  
+                    a {
+                        text-decoration: none;
+                        color: var(--white);
+                        font-size: 16px;
+                        text-transform: uppercase;                       
+                        padding-bottom: 3px;
+                        border-bottom: 1px solid var(--black-1);
+                        transition: all .4s ease-in-out;
+                        cursor: pointer;
+                        &:hover {
+                            color: var(--yellow-1);
+                            transition: all .4s ease-in-out;
+                            border-bottom: 1px solid var(--yellow-1);
+                        }
+                    }
+                }
+            }
+        }
+        .access {
+            display: flex;
+            position: relative;
+            right: var(--space-20);
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: var(--white);
+                padding: 5px;
+                transition: all .4s ease-in-out;
+                &:hover {
+                    color: var(--yellow-1);
+                    transition: all .4s ease-in-out;
+                  
+                }
+            }
+        }  
+    }
+
 }
