@@ -1,0 +1,121 @@
+#footer {
+    flex-direction : column;
+    width          : 100%;
+    height         : 220px;
+    align-items    : center;
+    justify-content: center;
+
+    .container {
+        width          : 90%;
+        height         : 180px;
+        justify-content: center;
+
+        .left {
+            display: none;
+        }
+
+        .right {
+            display: none;
+        }
+
+        .center {
+            flex-direction: column;
+            width         : 90%;
+
+            justify-content: center;
+            align-items    : center;
+
+            .social-icons {
+                width          : 150px;
+                justify-content: space-between;
+                margin-top     : 10px;
+            }
+        }
+    }
+
+    .divider-f {
+        border          : none;
+        margin          : 0;
+        padding         : 0;
+        width           : 90%;
+        height          : 1px;
+        background-color: var(--gray-3);
+        margin-top      : 10px;
+
+    }
+
+    p {
+        text-align      : center;
+        font-size       : 14px;
+        margin          : 0;
+        padding         : 0;
+        margin-top      : 10px;
+    }
+
+}
+
+@media (min-width:1024px){
+    #footer{
+        .container{
+            width: 92%;
+            .left{
+               display: flex;
+               flex-direction: column;
+               text-align: center;
+               justify-content: center;
+               h3{
+                   margin: 0;
+                   color: var(--gray-1);
+                   text-transform: uppercase;
+                   font-weight: bold;
+               }
+               small{
+                   color: var(--gray-1);
+               }
+            }
+            .center{
+
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                h3{
+                    margin: 0;
+                    color: var(--gray-1);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                small{
+                    color: var(--gray-1);
+                }
+            }
+        }
+    }
+}
+@media(min-width:1920px){
+    #footer{
+        .container{
+            width: 90%;
+            .center{
+                .social-icons{
+                    a{
+                        svg{
+                            path{
+                                transition: all .4s ease-in-out;
+                            }
+                            &:hover{
+                                path{
+                                    fill: var(--yellow-1);
+                                    transition: all .4s ease-in-out;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

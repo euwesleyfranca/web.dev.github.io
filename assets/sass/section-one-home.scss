@@ -138,36 +138,13 @@
 
     }
 
-    .btn-1 {
-        background-color: var(--black-1);
-        width           : 142px;
-        height          : 49px;
-        margin-bottom   : var(--space-20);
-        align-items     : center;
-        justify-content : center;
-
-        a {
-            color          : var(--white);
-            text-decoration: none;
-            font-size      : 20px;
-            padding        : 10px;
-            padding-left   : 20px;
-            padding-right  : 20px;
-            cursor         : pointer;
-
-
-        }
-    }
+   
 }
 
 @media(min-width: 1024px) {
     .section-one-home {
-        .title{
-          
-            padding: var(--space-20);
-            h1{
-                font-size: 35px;
-            }
+        .title{          
+            padding: var(--space-30);           
         }
         .container {
             flex-direction: row;
@@ -183,11 +160,10 @@
 
 @media (min-width: 1440px) {
     .section-one-home{
-        .title{
+        .title{          
           
-            padding: var(--space-20);
             h1{
-                font-size: 50px;
+                font-size: 35px;
             }
         }
         .container{
@@ -199,6 +175,11 @@
 
 @media (min-width: 1920px) {
     .section-one-home{
+        .title{
+            h1{
+                font-size: 45px;
+            }
+        }
         .container{
             justify-content: center;
             height: 700px;

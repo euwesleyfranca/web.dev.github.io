@@ -23,7 +23,8 @@
         align-items: center;
         left: calc(50vw - 70px);
         z-index: 20;
-        color: var(--white);      
+        color: var(--white);
+        font-size: 16px;      
 
         img {
             transition: all .9s ease-in-out;            
