@@ -1,0 +1,64 @@
+#title-pages{   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--space-20);
+   
+
+    h1{
+        width: 90%;
+        color: var(--white);
+        font-size: 20px;
+        text-align: center;
+        margin: 0;     
+        span{
+            font-weight: bold;
+        }
+
+    }
+    hr{
+        border: none;
+        height: 2px;
+        width: 150px;
+        background-color: var(--white);
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
+@media(min-width:768px){
+   #title-pages{
+    h1{
+        width: 80%;
+        font-size: 25px;
+    }
+   }
+
+}
+@media(min-width:1024px){
+    #title-pages{
+     h1{
+         width: 80%;
+         font-size: 30px;
+     }
+    }
+ 
+ }
+ @media(min-width:1440px){
+    #title-pages{
+     h1{
+         width: 80%;
+         font-size: 40px;
+     }
+    }
+ 
+ }
+ @media(min-width:1920px){
+    #title-pages{
+     h1{
+         width: 80%;
+         font-size: 50px;
+     }
+    }
+ 
+ }

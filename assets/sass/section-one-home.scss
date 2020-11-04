@@ -143,9 +143,7 @@
 
 @media(min-width: 1024px) {
     .section-one-home {
-        .title{          
-            padding: var(--space-30);           
-        }
+       
         .container {
             flex-direction: row;
             width: 100%;
@@ -159,13 +157,7 @@
 }
 
 @media (min-width: 1440px) {
-    .section-one-home{
-        .title{          
-          
-            h1{
-                font-size: 35px;
-            }
-        }
+    .section-one-home{        
         .container{
             height: 600px;
         }
@@ -175,11 +167,7 @@
 
 @media (min-width: 1920px) {
     .section-one-home{
-        .title{
-            h1{
-                font-size: 45px;
-            }
-        }
+      
         .container{
             justify-content: center;
             height: 700px;

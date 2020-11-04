@@ -1,0 +1,102 @@
+.schedule{   
+    height: calc(100vh - 190px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-2);
+   .title-schedule{
+       height: 50px;
+       width: 90%;       
+       justify-content: center;
+       align-items: center;
+       background-color: var(--black-1);
+       color: var(--white);
+       font-size: 14px;
+       text-transform: uppercase;
+       font-weight: bold;
+   }
+   .available{      
+       width: 90%;       
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       column-gap: 5px;
+       row-gap: 5px;
+      .choice{
+          background-color: var(--gray-2);
+          align-items: center;
+          justify-content: center;
+          height: 60px;
+          border: 1px solid var(--white);
+          cursor: pointer;
+          transition: all .3s ease-in-out;
+          &:hover{
+              background-color: var(--blue-2);
+              transition: all .3s ease-in-out;
+              color: var(--white);
+              
+          }
+          &.selected{
+            background-color: var(--blue-2);
+            color: var(--white);
+            border: 1px solid var(--white);
+          }
+      }
+
+   }
+}
+
+@media(min-width:768px){
+    .schedule{
+       
+        .title-schedule{
+            width: 80%;
+        }
+        .available{
+            width: 80%;
+            .choice{
+                height: 110px;
+            }
+        }
+    }
+}
+@media(min-width:1024px){
+.schedule{
+   
+    .title-schedule{
+        width: 80%;
+    }
+    .available{
+        width: 80%;
+        .choice{
+            height: 140px;
+        }
+    }
+}
+}
+@media(min-width:1440px){
+.schedule{
+    .available{
+       .choice{
+           height: 120px;
+           font-size: 22px;
+       }
+    }
+}
+}
+@media(min-width:1920px){
+    .schedule{
+     
+        .title-schedule{
+            width: 70%;
+            font-size: 25px;
+        }
+        .available{
+            width: 70%;
+           .choice{
+               height: 150px;
+               font-size: 30px;
+           }
+        }
+    }
+}

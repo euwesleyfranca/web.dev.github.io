@@ -18,6 +18,9 @@ body {
     padding: 0;
    
 }
+.title-testing{
+
+}
 
 .btn-1 {
     background-color: var(--black-1);
@@ -69,11 +72,150 @@ body {
     font-size: 14px;  
     }
 }
+.btn-3{
+    background-color: var(--black-3);
+    width           : 300px;
+    height          : 49px;
+    align-items     : center;
+    justify-content : center;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-in-out;
+    border-radius: 5px;
+    &:hover{
+        background-color: var(--green-1);
+        transition: all .4s ease-in-out;
+    }
+    a{
+        font-size: 16px;
+        text-decoration: none;
+        color: var(--white);
+    }
+}
+.btn-4{
+    width: 113px;
+    height: 44px;
+    background-color: var(--blue-2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color: var(--blue-2);
+        transition: all .3s ease-in-out;
+        color: var(--white);
+    }
+    a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+       
+        
+    }
+}
+.btn-5{
+    width: 113px;
+    height: 44px;
+    background-color: var(--gray-1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;  
+    a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+      
+    }
+}
+.btn-finish{
+    width: 113px;
+    height: 44px;
+    background-color: var(--blue-2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color: var(--white);
+        transition: all .3s ease-in-out;
+        a{
+            color: var(--black-1);
+        }
+    }
+    a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 auto;
+       
+        
+        
+    }
+}
+@media(min-width:1024px){
+    .title{          
+       padding: var(--space-30); 
+       align-items: center;
+        h1{
+            font-size: 30px; 
+            width: 50%;           
+        }        
+    }
+}
+@media(min-width:1440px){
+    .title{          
+          
+        h1{
+            font-size: 40px;
+            width: 45%;
+        }
+    }
+
+    .btn-4{
+      
+        height: 54px;
+       
+    }
+    .btn-5{
+       
+        height: 54px;
+      
+    }
+
+}
 @media(min-width:1920px){
     .btn-2{
         a{
             font-size: 16px;
         }
+    }
+    .title{
+        
+        h1{
+            font-size: 45px;
+            width: 70%;           
+        }
+    }
+    .btn-4{
+      
+        height: 64px;
+        a{
+          font-size: 22px;  
+        }
+        
+       
+    }
+    .btn-5{
+       
+        height: 64px;
+        a{
+            font-size: 22px;
+        }
+      
     }
 
 }
