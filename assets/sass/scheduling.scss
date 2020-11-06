@@ -4,7 +4,7 @@
     height: calc(100vh - 190px);
     align-items: center;
     justify-content: center;
-    background-color: var(--blue-2);
+    background-color: var(--black-3);
  
     .container{
         flex-direction: column;
@@ -32,13 +32,13 @@
             padding-top: 5px;
             padding-bottom: 5px;
             .day{
-                color: var(--gray-1);
+                color: var(--black-1);
                 text-transform: uppercase;
                 font-size: 16px;
                 font-weight: bold;               
             }
             .month{
-                color: var(--gray-1);
+                color: var(--black-1);
                 text-transform: uppercase;
                 font-size: 16px;
                 font-weight: bold;
@@ -78,7 +78,7 @@
                 text-transform: uppercase;
                 justify-content: center;
                 font-size: 16px;
-                color: var(--gray-1);
+                color: var(--black-1);
                
             }             
            
@@ -97,26 +97,26 @@
                 padding: 0;                
                            
                 .selected{
-                    background-color: var(--blue-2);
+                    background-color: var(--yellow-1);
                     color: var(--black-1);
                     border-radius: 4px;
                    }
                 .month-prev{
-                    color: var(--gray-3);
+                    color: var(--black-1);
                 }
                 .month-next{
-                    color: var(--gray-3);
+                    color: var(--black-1);
                 }
                li{                 
                    align-items: center;
                    cursor: pointer;
                    height: 30px;
                    font-size: 16px;
-                   color: var(--gray-1);
+                   color: var(--black-1);
                    justify-content: center;                  
                    transition: all .3s ease-in-out;
                    &:hover{
-                       background-color: var(--blue-2);
+                       background-color: var(--yellow-1);
                        color: var(--black-1);
                        border-radius: 4px;
                        transition: all .3s ease-in-out;

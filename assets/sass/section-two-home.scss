@@ -1,6 +1,6 @@
 .section-two-home{
     flex-direction: column;
-    background-color: var(--gray-2);
+    background-color: var(--white);
     align-items: center;
     .title{
         flex-direction: column;
@@ -9,9 +9,11 @@
         padding-top: 10px;
         padding-bottom: 10px;
         text-align: center;
+       
         h1{
             margin: 0;
             padding: 0;
+           
         }
 
         span {
@@ -29,68 +31,149 @@
     }
     .container{
         flex-direction: column;
-        align-items: center;
-       
+        align-items: center;             
         margin-bottom: var(--space-30);
         article {
             text-align: justify;
             padding: 5px;
+            color: var(--black-1);
         }
-        
+       > .images{
+           flex-direction: column;
+            width: 95%;
+            align-items: center;   
+            .image-operate{
+              position: relative; 
+              width: 300px;  
+              height: 200px;               
+              align-items: flex-end;
+              justify-content: flex-end;           
+             
+                 .plan{
+                position: absolute;
+                z-index: 2;                             
+                background-color: var(--white);
+                width: 100px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                svg{
+                   margin-left: 5px;
+                   path{
+                       fill: var(--green-1);
+                   }                   
+                }
+              
+                p{
+                    font-size: 16px;
+                    color: var(--black-1);
+                    font-weight: bold;
+                }
+            }
+              .overlay{
+                  position: absolute;
+                  justify-content: center;
+                  align-items: center;
+                  z-index: 3;
+                  width: 100%;
+                  height: 100%;
+                  opacity: .1;
+                  cursor: pointer;                  
+                  background-color: var(--black-1);
+                  transition: all .4s ease-out;
+                  &:hover{
+                    background-color: var(--white);
+                    transition: all .4s ease-in;
+                  }
+                 
+                
+              }
+           
+          }
+        }        
     }
    
 }
-@media(min-width:768px){
-  .section-two-home{
-    .container{
-        flex-direction: row;
-        
-        article{
-            padding: var(--space-20);
-        }
-       
-    }
-  }
-}
 
+@media(min-width:768px){
+    .section-two-home{
+        .container{
+            .images{
+                flex-direction: row;
+                flex-wrap: wrap;              
+               justify-content: center;
+               .image-operate{
+                   .plan{
+                       width: 150px;
+                   }
+               }
+            }
+            article{
+                width: 80%;
+                font-size: 14px;
+            }
+        }
+    }
+
+}
 @media(min-width:1024px){
     .section-two-home{
         .title{
-           padding: var(--space-30);
-        }
-      .container{
-              justify-content: space-around;
-          article{
-             width: 50%;
-             font-size: 18px;
-          }
-         
-      }
-    }
-  }
-@media (min-width: 1440px){
-    .section-two-home{
-        .title{
             h1{
-                font-size: 35px;
+                width: 100%;
             }
         }
+        .container{
+            article{
+                width: 90%;
+                font-size: 14px;
+            }
+          
+        }
     }
-}  
+
+}
+@media(min-width:1440px){
+    .section-two-home{
+        .container{
+            article{
+                width: 84%;
+            }
+            .images{
+               .image-operate{
+                   width: 400px;
+                   height: 300px;                 
+                   border: 1px solid;
+                }
+            }
+          
+        }
+    }
+
+}
 @media(min-width:1920px){
     .section-two-home{
-        .title{
-            h1{
-                font-size: 45px;
+        .container{
+            article{
+                width: 76%;
+                font-size: 20px;
+            }
+            .images{
+               .image-operate{
+                   width: 600px;
+                   height: 400px;
+                  
+                  .plan{
+                    width: 200px;
+                      p{
+                          font-size: 22px;
+                         
+                      }
+                  }
+                   
+                }
             }
         }
-      .container{
-              justify-content: space-around;
-          article{
-             width: 30%;
-             font-size: 22px;
-          }
-         
-      }
     }
-  }
+
+}

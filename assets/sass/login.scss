@@ -1,0 +1,201 @@
+#login{
+    position: relative;
+    align-items: center; 
+    background-color: var(--black-1);
+    flex-direction: column;
+   
+    .logo-restricted{
+        position: absolute;
+        left: 0;
+        margin-top:14px ;
+    }
+    .form-login{ 
+        flex-direction: column;        
+        width: 95%;
+        height: 100vh;             
+        align-items: center;
+        justify-content: space-around;
+        font-size: 20px;
+        color: var(--white);
+        font-weight: 100;
+       
+        .return{           
+           width: 130px;
+           justify-content: space-around;      
+            a{
+                text-decoration: none;
+                font-size: 16px;
+                color: var(--white);
+            }
+        }
+        .form{           
+            flex-direction: column;            
+            align-items: center;
+            width: 100%;
+            
+            img{
+                margin: 0 auto; 
+                margin-bottom: 20px;     
+            }
+            form{
+                flex-direction: column;  
+                width: 95%;
+                .input-form{
+                    padding-top: 50px;                
+                    width: 100%;
+                    border: none;                    
+                    border-bottom: 1px solid var(--gray-1);
+                    outline: none;
+                    background-color: var(--black-1);  
+                    color: var(--white);
+                                      
+                }
+
+                button{
+                    border: none;
+                    height: 40px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: var(--space-30);
+                    cursor: pointer;
+                    outline: none;
+                    &:hover{
+                        background-color: var(--yellow-1);
+                        transition: all .4s ease-in-out;
+                        color: var(--black-1);
+                    }
+                }
+            }
+            >div{
+                width: 100%;
+                padding: 30px;
+                font-size: 14px;
+                justify-content: space-between;
+                
+                a{
+                    text-decoration: none;
+                    color: var(--white);
+                    &:hover{
+                        color: var(--yellow-1);
+                        transition: all .4s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:375px){
+    #login{
+        img{
+            margin-top: var(--space-20);
+        }
+        .logo-restricted{
+            top: 25%;
+        }        
+    }
+
+}
+@media(min-width:768px){
+    #login{
+      
+        .logo-restricted{        
+            left:10% ;
+            top: 45%;
+        }
+        .form-login{           
+            font-size: 25px;
+            width: 70%;
+            .form{
+             
+                padding: var(--space-20);
+                
+                form{
+                    input{
+                        padding-top: 50px;  
+                        width: 400px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media(min-width:1024px){
+    #login{
+      
+        .logo-restricted{        
+            left:15% ;
+            
+        }
+        .form-login{
+            width: 50%;
+        }
+       
+    }
+
+}
+
+@media(min-width:1440px){
+    #login{
+      
+        .logo-restricted{
+           
+            left:22% ;
+        }
+        .form-login{
+         
+            .form{  
+                width: 80%;
+                  height: 55%;         
+                form{
+                    height: 100%; 
+                    justify-content: center;
+                    input{
+                        padding-top: 70px;  
+                        width: 500px;
+                        height: 100px;
+                       
+                    }
+                    button{
+                        font-size: 18px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+      
+    }
+
+}
+@media(min-width:1920px){
+    #login{
+      
+        .logo-restricted{
+         
+            left:32% ;
+        }
+        .form-login{
+         
+            .form{  
+                height: 40%;    
+                width: 55%;         
+                form{
+                    justify-content: center;
+                    input{
+                        padding-top: 90px;  
+                        width: 600px;
+                        font-size: 20px;
+                      
+                       
+                    }
+                }
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+      
+    }
+
+}

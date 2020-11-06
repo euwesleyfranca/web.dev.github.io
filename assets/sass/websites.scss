@@ -30,13 +30,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--gray-2);
+    background-color: var(--black-1);
     padding-bottom: var(--space-20);
     padding-top: var(--space-20);
+    img{
+        padding: 10px;
+    }
     article{
         flex-direction: column;
         padding: 5px;
         align-items: center;
+        color: var(--black-1);
+        background-color: var(--white);
+        border-radius: 5px;
         h2{
             text-align: center;
             text-transform: uppercase;

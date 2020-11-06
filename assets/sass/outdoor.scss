@@ -5,7 +5,21 @@
     min-width: 320px;
     height: 590px;
     align-items   : center;
-    background-color: var(--black-2);
+    background-color: var(--black-1);
+    .rocket{
+        position: absolute;       
+        animation-name: rocket;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        @keyframes rocket {
+           0%{left: 45%;top: 50%; transform: rotate(-70deg); }
+         
+           50%{left: 45%;top: 0px;}
+          
+           100%{left: 45%;top: 50%;transform: rotate(-240deg);}
+           
+        }
+    }
 
   .engine-1{
       position: absolute;
@@ -18,12 +32,13 @@
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 50%;
-      animation: engine-1 30s infinite linear;
+      animation: engine-1 10s infinite linear;
+     
       @keyframes engine-1{
-        100%{
-            transform:rotate(360deg);
-        }
-    }  
+       0%{transform:rotate(360deg);}
+     
+    } 
+   
   }
   .engine-2{
       position: absolute;
@@ -71,13 +86,17 @@
         justify-content: space-between;
         .social-icons {
             display: none;
-            >svg {
+           a{
+               cursor: pointer;
+              >svg {
                 padding-bottom: 5px;
                 height: 55px;
                 path{
                     fill: var(--yellow-2);
                 }
-            }         
+            }     
+           }
+                 
 
             flex-direction: column;
         }
@@ -88,6 +107,7 @@
     
 
 }
+
 @media(min-width:568px){
     #outdoor{       
        
@@ -156,7 +176,7 @@
                 top: 22%;
             }
             .engine-3{
-                background-image: url('../images/new/background-engine-image1440.svg');
+                background-image: url('../images/new/background-engine-image1440.webp');
                 background-size: contain;
                 background-position: center;
             }
@@ -222,6 +242,12 @@
 
         .session-logo-social{
            top: 30%;
+           .social-icons{
+               svg{
+                   width: 55px;
+                   height: 55px;
+               }
+           }
               
           }
     }

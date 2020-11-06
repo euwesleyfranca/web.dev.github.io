@@ -18,9 +18,7 @@ body {
     padding: 0;
    
 }
-.title-testing{
 
-}
 
 .btn-1 {
     background-color: var(--black-1);
@@ -34,7 +32,7 @@ body {
     border-radius: 5px;
     
     &:hover{
-        background-color: var(--green-1);
+        background-color: var(--yellow-1);
         transition: all .4s ease-in-out;
     }
 
@@ -60,11 +58,12 @@ body {
     margin-top: 200px;
     justify-content: center;
     align-items: center;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
     border-radius: 5px;
+    cursor: pointer;
     &:hover{
-        background-color: var(--green-1);
-        transition: all .4s ease-in-out;
+        background-color: var(--yellow-1);
+        transition: all .3s ease-in-out;
     }
     a{
     color: var(--white);
@@ -80,11 +79,12 @@ body {
     justify-content : center;
     justify-content: center;
     align-items: center;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
     border-radius: 5px;
+    cursor: pointer;
     &:hover{
-        background-color: var(--green-1);
-        transition: all .4s ease-in-out;
+        background-color: var(--yellow-1);
+        transition: all .3s ease-in-out;
     }
     a{
         font-size: 16px;
@@ -95,20 +95,20 @@ body {
 .btn-4{
     width: 113px;
     height: 44px;
-    background-color: var(--blue-2);
+    background-color: var(--yellow-1);
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
     transition: all .3s ease-in-out;
     &:hover{
-        background-color: var(--blue-2);
+        background-color: var(--yellow-2);
         transition: all .3s ease-in-out;
-        color: var(--white);
+        color: var(--black-1);
     }
     a{
         text-decoration: none;
-        color: var(--white);
+        color: var(--black-1);
         font-size: 20px;
        
         
@@ -117,7 +117,7 @@ body {
 .btn-5{
     width: 113px;
     height: 44px;
-    background-color: var(--gray-1);
+    background-color: var(--black-2);
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -132,14 +132,14 @@ body {
 .btn-finish{
     width: 113px;
     height: 44px;
-    background-color: var(--blue-2);
+    background-color: var(--yellow-1);
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
     transition: all .3s ease-in-out;
     &:hover{
-        background-color: var(--white);
+        background-color: var(--yellow-2);
         transition: all .3s ease-in-out;
         a{
             color: var(--black-1);
@@ -147,7 +147,7 @@ body {
     }
     a{
         text-decoration: none;
-        color: var(--white);
+        color: var(--black-1);
         font-size: 20px;
         font-weight: bold;
         margin: 0 auto;
@@ -189,8 +189,9 @@ body {
 }
 @media(min-width:1920px){
     .btn-2{
+        width: 160px;
         a{
-            font-size: 16px;
+            font-size: 18px;
         }
     }
     .title{
@@ -198,6 +199,11 @@ body {
         h1{
             font-size: 45px;
             width: 70%;           
+        }
+    }
+    .btn-3{
+        a{
+            font-size: 18px;
         }
     }
     .btn-4{

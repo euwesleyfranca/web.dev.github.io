@@ -1,0 +1,138 @@
+#contact{
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--black-1);
+    
+    small{
+        color: var(--gray-3);
+        padding: 5px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .container{      
+        justify-content: center;
+        form{
+            flex-direction: column;
+            padding: 10px;
+            color: var(--gray-2);
+            font-size: 12px;
+            background-color:var(--black-1);
+            width: 90%;
+          
+            label{
+               padding-top: 2px;
+               color: var(--gray-3);              
+            }
+            .input-contact{
+                border: none;
+                border-bottom: 1px solid var(--gray-1);
+                outline: none;
+                font-size: 18px;
+                width: 100%;
+                padding-top: 35px;
+                margin-top: 5px;
+                background-color: var(--black-1);
+                color: var(--white);
+                
+            }
+            .text-area{
+                width: 100%;               
+                margin-top: 5px; 
+                font-size: 18px;
+                color: var(--white);               
+                border: none;
+                border-bottom: 1px solid var(--gray-1);
+                outline: none;
+                background-color: var(--black-1);
+                
+                
+            }
+            button{
+                border: none;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;  
+                font-weight: bold;              
+                margin-top: 10px;
+                background-color: var(--yellow-1);
+                cursor: pointer;
+                &:hover{
+                    background-color: var(--yellow-2);
+                    transition: all .4s ease-in-out;
+                    color: var(--black-1);
+                }
+            }
+        }
+    }
+}
+@media(min-width:375px){
+    #contact{
+        height: calc(100vh - 320px);
+    }
+
+}
+@media(min-width:768px){
+    #contact{
+        .container{
+            form{
+                width: 60%;
+
+            }
+        }
+    }
+}
+@media(min-width:1024px){
+    #contact{
+        .container{
+            form{
+                width: 50%;
+            }
+        }
+    }
+
+}
+@media(min-width:1440px){
+    #contact{
+        .container{
+            form{
+                font-size: 16px;
+                width: 40%;
+                .input-contact{
+                    padding-top: 50px;
+                    font-size: 22px;
+                }
+                .text-area{
+                    height: 120px;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+}
+@media(min-width:1920px){
+    #contact{
+        small{
+            font-size: 18px;
+        }
+        .container{
+            form{
+                font-size: 18px;
+                width: 35%;
+                .input-contact{
+                    padding-top: 60px;
+                }
+                .text-area{
+                    height: 200px;
+                }
+                button{
+                    height: 60px;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+}
