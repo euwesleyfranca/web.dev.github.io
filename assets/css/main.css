@@ -708,13 +708,14 @@ body {
   }
   #outdoor .engine-1 {
     top: 48%;
-    left: 18%;
+    left: 10%;
     background-image: url("../images/background-images/1.png");
     width: 500px;
     height: 500px;
   }
   #outdoor .engine-2 {
     top: 18%;
+    left: 24%;
     background-image: url("../images/background-images/engine-2-900.png");
     width: 500px;
     height: 500px;
@@ -725,7 +726,7 @@ body {
     background-position: center;
   }
   #outdoor .engine-4 {
-    right: 22%;
+    right: 14%;
     top: 20%;
     background-image: url("../images/background-images/engine-2-500.svg");
     width: 500px;
@@ -1091,6 +1092,7 @@ body {
 }
 .section-tree-home .container {
   flex-direction: column;
+  background-color: goldenrod;
 }
 .section-tree-home .container .portifolio {
   width: 280px;
