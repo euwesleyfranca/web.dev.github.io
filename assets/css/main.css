@@ -1039,7 +1039,7 @@ body {
 }
 @media (min-width: 1440px) {
   .section-two-home .container article {
-    width: 84%;
+    width: 94%;
   }
   .section-two-home .container .images .image-operate {
     width: 400px;
@@ -1193,6 +1193,9 @@ body {
   }
   .section-tree-home .title h1 {
     font-size: 45px;
+  }
+  .section-tree-home .container {
+    width: 95%;
   }
   .section-tree-home .container .portifolio {
     width: 450px;
