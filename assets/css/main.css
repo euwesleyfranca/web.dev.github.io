@@ -1092,7 +1092,6 @@ body {
 }
 .section-tree-home .container {
   flex-direction: column;
-  background-color: goldenrod;
 }
 .section-tree-home .container .portifolio {
   width: 280px;
@@ -2320,11 +2319,6 @@ body {
   color: var(--black-1);
 }
 
-@media (min-width: 375px) {
-  #contact {
-    height: calc(100vh - 320px);
-  }
-}
 @media (min-width: 768px) {
   #contact .container form {
     width: 60%;
