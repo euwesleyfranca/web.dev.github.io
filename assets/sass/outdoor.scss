@@ -192,6 +192,17 @@
         
     }
     }
+@media(min-width:1366px){
+    #outdoor{
+        .engine-1{
+            left: 12%;
+        }
+        .engine-4{
+            right: 18%;
+        }
+    }
+
+}
 @media(min-width:1440px){
     #outdoor{
         height: 1111px;
