@@ -1039,7 +1039,7 @@ body {
 }
 @media (min-width: 1440px) {
   .section-two-home .container article {
-    width: 94%;
+    width: 84%;
   }
   .section-two-home .container .images .image-operate {
     width: 400px;
@@ -1049,7 +1049,7 @@ body {
 }
 @media (min-width: 1920px) {
   .section-two-home .container article {
-    width: 76%;
+    width: 94%;
     font-size: 20px;
   }
   .section-two-home .container .images .image-operate {
