@@ -156,17 +156,18 @@
     }
 
 }
-@media(min-width:1024px){
+@media(min-width:1200px){
     #scheduling{
         .title{
-           
+         
             h1{
-                
+                font-size: 16px;
                 width: 80%;
             }
         }
         .container{
-            width: 80%;
+            width: 60%;
+            
             .calendar{
                 ul{
                     li{
@@ -180,16 +181,17 @@
    
 }
 
-@media(min-width:1440px){
+@media(min-width:1366px){
     #scheduling{
        
         .container{
-            width: 70%;
+            width: 60%;
+            height: 80%;
             .calendar{
                 ul{
                     li{
-                        height: 80px;
-                        font-size: 25px;
+                        height: 64px;
+                        font-size: 20px;
                     }
                 }
             }
