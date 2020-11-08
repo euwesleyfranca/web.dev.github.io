@@ -53,25 +53,25 @@
              margin: 0;   
            
              img{
-                 width: 100%;                 
+                 width: 100%;  
+                
              }
              figcaption{
                 position: absolute;
-                background-color: var(--black-1);
-                opacity: .9;              
+                background-color: var(--black-1);                           
                 bottom: 10px;
-                width: 150px;
+                width: 160px;
                 h2{
                     margin: 0;
                     padding: 0;
                     color: var(--white);
-                    font-size: 16px;
+                    font-size: 18px;
                 }
                 p{
                     margin: 0;
                     padding: 0;
                     color: var(--white);
-                    font-size: 14px;
+                    font-size: 12px;
                     
                 }
              }
@@ -83,25 +83,34 @@
 
 @media(min-width:1200px){
     .section-two-home{
+        .title{
+            h1{
+               width: 100%;
+            }
+        }
         .container{
             article{
                 width: 95%;
             }
             .gallery{
                 flex-direction: row;
-              picture{
+             
+             figure{
+                picture{
                   padding: 2px;
               }
-               figcaption{
-                   margin-left: 2px;
-                   h1{
-                       font-size: 18px;
-                   }
-                   p{
-                       font-size: 16px;
-                   }
-               }
-            
+
+              figcaption{
+                  width: 180px;
+                  h2{
+                      font-size: 22px;
+                  }
+                  p{
+                      font-size: 14px;
+                  }
+              }
+               
+            }
             }
            
         }
@@ -141,7 +150,15 @@
        .gallery{
            figure{
                figcaption{
-                   width: 200px;                   
+                   width: 240px; 
+                   height: 70px;
+                                      
+                   h2{
+                       font-size: 25px;
+                   }
+                   p{
+                       font-size: 18px;
+                   }
                }
            }
        }

@@ -59,7 +59,7 @@
 
             .circle {
                 flex-direction  : column;
-                background-color: var(--yellow-1);
+                background-color: var(--black-1);
                 justify-content : center;
                 align-items     : center;
                 width           : 200px;
@@ -71,14 +71,14 @@
                     margin        : 0;
                     padding       : 0;
                     text-transform: uppercase;
-                    color         : var(--black-1);
+                    color         : var(--white);
                     font-weight   : bold;
                 }
 
                 p {
                     margin : 0;
                     padding: 0;
-                    color  : var(--black-1);
+                    color  : var(--white);
 
                 }
 
@@ -118,7 +118,7 @@
 
             .circle {
                 flex-direction  : column;
-                background-color: var(--yellow-1);
+                background-color: var(--black-1);
                 justify-content : center;
                 align-items     : center;
                 width           : 200px;
@@ -129,14 +129,14 @@
                     margin        : 0;
                     padding       : 0;
                     text-transform: uppercase;
-                    color         : var(--black-1);
+                    color         : var(--white);
                     font-weight   : bold;
                 }
 
                 p {
                     margin : 0;
                     padding: 0;
-                    color  : var(--black-1);
+                    color  : var(--white);
 
                 }
 
@@ -176,7 +176,7 @@
 
             .circle {
                 flex-direction  : column;
-                background-color: var(--yellow-1);
+                background-color: var(--black-1);
                 justify-content : center;
                 align-items     : center;
                 width           : 200px;
@@ -187,14 +187,14 @@
                     margin        : 0;
                     padding       : 0;
                     text-transform: uppercase;
-                    color         : var(--black-1);
+                    color         : var(--white);
                     font-weight   : bold;
                 }
 
                 p {
                     margin : 0;
                     padding: 0;
-                    color  : var(--black-1);
+                    color  : var(--white);
 
                 }
 
@@ -273,15 +273,31 @@
             
             .service-one{
                 width: 550px; 
-                height: 680px;             
+                height: 680px;  
+                
+                .description-service{
+                    p{
+                        font-size: 18px;
+                    }
+                }
             }
             .service-two{
                 width: 550px;
-                height: 680px;   
+                height: 680px; 
+                .description-service{
+                    p{
+                        font-size: 18px;
+                    }
+                }  
             }
             .service-tree{
                 width: 550px;
                 height: 680px;  
+                .description-service{
+                    p{
+                        font-size: 18px;
+                    }
+                }
             }
         }
     }

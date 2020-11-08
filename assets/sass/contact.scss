@@ -78,22 +78,22 @@
         }
     }
 }
-@media(min-width:1024px){
+@media(min-width:1200px){
     #contact{
         .container{
             form{
-                width: 50%;
+                width: 38%;
             }
         }
     }
 
 }
-@media(min-width:1440px){
+@media(min-width:1366px){
     #contact{
         .container{
             form{
                 font-size: 16px;
-                width: 40%;
+                width: 35%;
                 .input-contact{
                     padding-top: 50px;
                     font-size: 22px;
@@ -115,7 +115,7 @@
         .container{
             form{
                 font-size: 18px;
-                width: 35%;
+                width: 38%;
                 .input-contact{
                     padding-top: 60px;
                 }

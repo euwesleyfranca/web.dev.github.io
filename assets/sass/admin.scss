@@ -18,7 +18,7 @@
            
             .header-item{
                 flex-direction: column;
-                border-bottom: 3px solid var(--black-2);
+                border-bottom: 3px solid var(--gray-3);
                 align-items: center;
                padding: 10px;
                 >h1{
@@ -28,7 +28,7 @@
                 }
             }
             >.details{
-                border-bottom: 3px solid var(--black-2);
+                border-bottom: 3px solid var(--gray-3);
                 flex-direction: column;
                 align-items: center;
                 padding: 5px;
@@ -68,21 +68,21 @@
     }
 }
 }
-@media(min-width:1024px){
+@media(min-width:1200px){
     #admin{
         .container{           
-           width: 78%;            
+           width: 66%;            
         }
     }
     }
-@media(min-width:1440px){
+@media(min-width:1366px){
     #admin{
         .container{            
             justify-content: center;
             width: 73%;
             
             .item{
-                width: 330px;
+                width: 320px;
                 .header-item{
                     h1{
                         font-size: 20px;

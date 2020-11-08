@@ -90,7 +90,7 @@
             margin-top: var(--space-20);
         }
         .logo-restricted{
-            top: 25%;
+            top: 10%;
         }        
     }
 
@@ -100,7 +100,7 @@
       
         .logo-restricted{        
             left:10% ;
-            top: 45%;
+            top: 15%;
         }
         .form-login{           
             font-size: 25px;
@@ -121,27 +121,31 @@
     }
 
 }
-@media(min-width:1024px){
+@media(min-width:1200px){
     #login{
       
         .logo-restricted{        
-            left:15% ;
-            
+            left: 19%;
+            top: 30%;            
         }
         .form-login{
             width: 50%;
+            .form{
+                width: 500px;
+            }
         }
        
     }
 
 }
 
-@media(min-width:1440px){
+@media(min-width:1366px){
     #login{
       
         .logo-restricted{
            
-            left:22% ;
+            left: 20%;
+            top: 30%;
         }
         .form-login{
          
@@ -172,7 +176,7 @@
     #login{
       
         .logo-restricted{
-            top: 10%;
+            top: 30%;
             left:30% ;
         }
         .form-login{
