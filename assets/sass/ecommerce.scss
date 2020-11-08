@@ -34,6 +34,13 @@
     background-color: var(--gray-2);
     padding-bottom: var(--space-20);
     padding-top: var(--space-20);
+    figure{
+      
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
     article{
         flex-direction: column;
         padding: 5px;
@@ -61,14 +68,18 @@
     }
 
 }
-@media(min-width:1024px){
+@media(min-width:1200px){
     #soluctions{
         .ecommerce{
             flex-direction: row;
             
-            img{
-                order: 2;
-            }
+            figure{
+               
+                          width: 50%;
+                          img{
+                              width: 100%;
+                          }
+                      }
             article{
                 align-items: flex-start;
                 width: 50%;
@@ -79,7 +90,7 @@
     }
 
 }
-@media(min-width:1440px){
+@media(min-width:1366px){
     #soluctions{
        
         .ecommerce{  
@@ -102,7 +113,10 @@
 @media(min-width:1920px){
     #soluctions{
         align-items: center;
-        .ecommerce{            
+        .ecommerce{ 
+            figure{
+                width: 35%;
+            }           
             article{                
                 width: 40%;                
                 h2{
