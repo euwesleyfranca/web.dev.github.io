@@ -1081,7 +1081,7 @@ body {
   width: 318px;
   height: 380px;
   background-color: var(--gray-2);
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   justify-content: center;
   align-items: center;
   color: var(--white);
@@ -1169,7 +1169,7 @@ body {
     font-size: 35px;
   }
   .section-tree-home .container .portifolio {
-    width: 340px;
+    width: 330px;
     height: 400px;
   }
   .section-tree-home .container .portifolio .overlay {
