@@ -83,6 +83,7 @@
         .container{
             form{
                 width: 38%;
+               
             }
         }
     }
@@ -109,6 +110,7 @@
 }
 @media(min-width:1920px){
     #contact{
+        height: calc(100vh - 320px);
         small{
             font-size: 18px;
         }
