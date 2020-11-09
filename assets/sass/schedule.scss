@@ -60,25 +60,25 @@
         }
     }
 }
-@media(min-width:1024px){
+@media(min-width:1200px){
 .schedule{
    
     .title-schedule{
-        width: 80%;
+        width: 50%;
     }
     .available{
-        width: 80%;
+        width: 50%;
         .choice{
-            height: 140px;
+            height: 70px;
         }
     }
 }
 }
-@media(min-width:1440px){
+@media(min-width:1366px){
 .schedule{
     .available{
        .choice{
-           height: 120px;
+           height: 70px;
            font-size: 22px;
        }
     }
@@ -88,13 +88,13 @@
     .schedule{
      
         .title-schedule{
-            width: 70%;
+            width: 50%;
             font-size: 25px;
         }
         .available{
-            width: 70%;
+            width: 50%;
            .choice{
-               height: 150px;
+               height: 90px;
                font-size: 30px;
            }
         }
