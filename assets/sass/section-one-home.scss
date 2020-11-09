@@ -42,7 +42,7 @@
             padding       : 5px;
             width         : 317px;
             height        : 530px;
-            border        : 1px solid var(--gray-3);
+            border        : 1px solid var(--gray-2);
             margin-bottom : var(--space-20);
 
             figure {
@@ -87,10 +87,10 @@
             .description-service {
                 position        : absolute;
                 bottom          : 0;
-                background-color: var(--black-1);
-
+                background-color: var(--gray-2);
+                padding: 2px;
                 p {
-                    color: var(--white);
+                    color: var(--black-1);
                 }
             }
         }
@@ -101,7 +101,7 @@
             align-items   : center;
             width         : 317px;
             height        : 530px;
-            border        : 1px solid var(--gray-3);
+            border        : 1px solid var(--gray-2);
             margin-bottom : var(--space-20);
 
             figure {
@@ -145,10 +145,10 @@
             .description-service {
                 position        : absolute;
                 bottom          : 0;
-                background-color: var(--black-1);
-
+                background-color: var(--gray-2);
+                padding: 2px;
                 p {
-                    color: var(--white);
+                    color: var(--black-1);
                 }
             }
         }
@@ -159,7 +159,7 @@
             align-items   : center;
             width         : 317px;
             height        : 530px;
-            border        : 1px solid var(--gray-3);
+            border        : 1px solid var(--gray-2);
             margin-bottom : var(--space-20);
 
             figure {
@@ -203,10 +203,11 @@
             .description-service {
                 position        : absolute;
                 bottom          : 0;
-                background-color: var(--black-1);
+                background-color: var(--gray-2);
+                padding: 2px;
 
                 p {
-                    color: var(--white);
+                    color: var(--black-1);
                 }
             }
         }
