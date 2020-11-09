@@ -41,16 +41,19 @@
                   }
         article{
             flex-direction: column;
-            padding: 5px;
+            padding: var(--space-20);
             align-items: center;
+            
             h2{
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: bold;
+                margin: 0;
             }
             p{
                 text-align: justify;
                 font-size: 16px;
+                font-weight: 300;
             }
         }
 
@@ -73,15 +76,15 @@
             flex-direction: row;
             figure{
               
-                          width: 50%;
+                          width: 40%;
                         
                       }
            
             article{
                 align-items: flex-start;
-                width: 50%;
+                width: 40%;
                 order: 1;
-                padding-right: var(--space-20);
+               
             }
         }
     }
